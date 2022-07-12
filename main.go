@@ -9,7 +9,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 
 	"github.com/yudai/gotty/backend/localcommand"
 	"github.com/yudai/gotty/pkg/homedir"
@@ -107,7 +107,6 @@ func main() {
 			fmt.Printf("Error: %s\n", err)
 			exit(err, 8)
 		}
-
 	}
 	app.Run(os.Args)
 }
